@@ -14,5 +14,4 @@ function matchWinner(teamAGoals, teamBGoals) {
     else {
         return "Draw";
     }
-
 }
