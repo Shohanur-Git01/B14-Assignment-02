@@ -70,5 +70,32 @@ function calculateAiCost(tokensUsed) {
         }
     }
 }
-
 console.log(calculateAiCost(user));
+
+
+// Problem 04
+
+const restaurants = [
+    { name: "Chillox", rating: 4.5 },
+    { name: "Sultan's Dine", rating: 4.8 }];
+
+function topRatedRestaurant(restaurants) {
+
+    let topRestaurant = restaurants[0];
+
+    if (!Array.isArray(restaurants) || restaurants.length === 0) {
+        return "Invalid";
+    }
+    else {
+        for (let i = 0; i < restaurants.length; i++) {
+            if (restaurants[i].rating > topRestaurant.rating) {
+                topRestaurant = restaurants[i];
+            }
+        }
+    }
+    return topRestaurant.name.toUpperCase();
+}
+console.log(topRatedRestaurant(restaurants));
+
+//Problem 05
+
